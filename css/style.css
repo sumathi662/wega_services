@@ -150,6 +150,14 @@
     }
 }
 
+@media screen and (max-width: 680px) {
+    .mobile-view {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+
+  }
+}
 
 /*** Header carousel ***/
 @media (max-width: 768px) {

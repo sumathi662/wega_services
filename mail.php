@@ -3,21 +3,20 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     $to = "admissions.wegaservices@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $name = $_POST['name'];
-    $cmpname = $_POST['cmpname'];  
-	  $mobileno = $_POST['mobileno'];
-	  $locality = $_POST['locality'];
-	  $city = $_POST['city'];   
-	   $state = $_POST['state']; 
+    $mobileno = $_POST['phone'];  
+	  $selectType = $_POST['selectType'];
+	  $country = $_POST['country'];
+	  $message = $_POST['message'];
       $subject = 'Enquiry_WEGA SERVICES';
       $subject2 = 'Enquiry_WEGA SERVICES';
 	
 	echo "mail sent"; 
 
 // message
-$message2 = "Dear Sales, Please respond to the query below:" . "\n\n" ."Name :" .$name . "\n\n" ."Company Name :" .$cmpname . "\n\n" ."Mobile Number :" .$mobileno ."\n\n" ."Email :" .$from ."\n\n" ."Location :" .$locality . "\n\n" ."City :" .$city;
+$message2 = "Dear Sales, Please respond to the query below:" . "\n\n" ."Name :" .$name . "\n\n" ."Mobile Number :" .$mobileno ."\n\n" ."Email :" .$from ."\n\n" ."select Type :" .$selectType . "\n\n" ."country :" .$country;
  
 $message = '<strong>Dear '.$name.',</strong>
-  <p>Thank you for contacting Paani Lao. Our representative will contact you shortly.</p> 
+  <p>Thank you for contacting WEGA Services. Our representative will contact you shortly.</p> 
 <br><br><br>
  
 <strong>Thank you</strong>
@@ -25,8 +24,8 @@ $message = '<strong>Dear '.$name.',</strong>
   <p>Sales Team</b></p>
   <p>WEGA SERVICES</p>
   <p>Email: admissions.wegaservices@gmail.com</p>  
-  <p>Phone No: +91 9700 700 396</p>		
-  <img src="http://paanilao.com/images/PaanilaoLogo.png" height="70px" />';
+  <p>Phone No: +91 8341 701 032</p>		
+  <img src="" height="70px" />';
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
