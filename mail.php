@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
 	echo "mail sent"; 
 
 // message
-$message2 = "Dear Sales, Please respond to the query below:" . "\n\n" ."Name :" .$name . "\n\n" ."Mobile Number :" .$mobileno ."\n\n" ."Email :" .$from ."\n\n" ."select Type :" .$selectType . "\n\n" ."country :" .$country;
+$message2 = "Dear Sales, Please respond to the query below:" . "\n\n" ."Name :" .$name . "\n\n" ."Mobile Number :" .$mobileno ."\n\n" ."Email :" .$from ."\n\n" ."select Type :" .$selectType . "\n\n" ."country :" .$country. "\n\n" ."Subject :" .$message;
  
 $message = '<strong>Dear '.$name.',</strong>
   <p>Thank you for contacting WEGA Services. Our representative will contact you shortly.</p> 
@@ -25,7 +25,7 @@ $message = '<strong>Dear '.$name.',</strong>
   <p>WEGA SERVICES</p>
   <p>Email: admissions.wegaservices@gmail.com</p>  
   <p>Phone No: +91 8341 701 032</p>		
-  <img src="" height="70px" />';
+  <img src="http://www.wegaservices.com/img/output-onlinepngtools%20(1).png" height="100px" />';
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
