@@ -440,3 +440,7 @@
     padding-right: 0;
     border-right: none;
 }
+
+.popular-country-title {
+    height: 150px;
+}
